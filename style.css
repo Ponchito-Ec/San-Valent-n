@@ -1,0 +1,119 @@
+/* reset css */
+
+* {
+  min-width: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* starts here */
+
+body {
+  background-color: palegoldenrod;
+  height: 100vh;
+
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  button {
+    padding: .5rem 1.5rem;
+    border: 2px solid rgba(0, 0, 0, .9);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+  }
+
+  button#yes {
+    background-color: #97cfaa;
+    font-size: 1.5rem; /* Se asegura que solo este botón tenga este tamaño de fuente */
+  }
+
+  button#no {
+    background-color: #f36c46;
+    font-size: 1.5rem; /* Se asegura que solo este botón tenga este tamaño de fuente */
+  }
+}
+
+button:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+
+#message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: palegoldenrod;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+#message img {
+  margin-bottom: 1rem;
+}
+
+#message h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  animation: palpitation 2s ease-in-out infinite;
+  line-height: 2.5rem;
+}
+
